@@ -249,7 +249,6 @@ func setDenom(grpcConn *grpc.ClientConn) {
 }
 
 func checkAndHandleDenomInfoProvidedByUser() bool {
-
 	if Denom != "" {
 		if DenomCoefficient != 1 && DenomExponent != 0 {
 			log.Fatal().Msg("denom-coefficient and denom-exponent are both provided. Must provide only one")
@@ -277,7 +276,6 @@ func checkAndHandleDenomInfoProvidedByUser() bool {
 	}
 
 	return false
-
 }
 
 func main() {
